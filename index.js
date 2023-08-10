@@ -477,9 +477,9 @@ console.log(customAt([1, 2, 3, 4, 5], 2));
   Повертає: Результат перевірки.
   */
 function customIncludes(arr, element) {
-  const result = arr.filter((fruit) => fruit === element);
-  console.log(result.length);
   if (Array.isArray(arr)) {
+    const result = arr.filter((fruit) => fruit === element);
+    console.log(result.length);
     return arr.includes(element);
   }
 
